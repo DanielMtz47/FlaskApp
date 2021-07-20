@@ -1,0 +1,10 @@
+
+.plotly-graph-div{
+    margin: auto;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
