@@ -1,0 +1,44 @@
+{
+    "virtualNetworkPeerings": {
+        "remoteVirtualNetwork": "remoteVirtualNet 1"
+    },
+    "addressSpace": {
+        "addressPrefixes": ["192.168.1", "192.168.2", "192.168.3"]
+    },
+    "dhcpOptions": {
+        "dnsServers":  ["1.1.1.1", "2.2.2.2", "3.3.3.3", "4.4.4.4", "5.5.5.5"]
+    },
+    "subnets":
+        {
+        "subnet 1":{
+            "addressPrefix": "192.168.1",
+            "networkSecurityGroup": {
+                "id": "netSecurityGroup 1"
+            },
+            "routeTable": {
+                "id": "routeTable 1"
+            },
+            "serviceEndpoints": ["endPoint 1.1", "endPoint 2.1", "endPoint 3.1"]
+        },
+        "subnet 2":{
+            "addressPrefix": "192.168.2",
+            "networkSecurityGroup": {
+                "id": "netSecurityGroup 2"
+            },
+            "routeTable": {
+                "id": "routeTable 2"
+            },
+            "serviceEndpoints": ["endPoint 2.1", "endPoint 2.2", "endPoint 2.3"]
+        },
+        "subnet 3":{
+            "addressPrefix": "192.168.3",
+            "networkSecurityGroup": {
+                "id": "netSecurityGroup 3"
+            },
+            "routeTable": {
+                "id": "routeTable 3"
+            },
+            "serviceEndpoints": ["endPoint 3.1", "endPoint 3.2", "endPoint 3.3"]
+        }
+    }
+}

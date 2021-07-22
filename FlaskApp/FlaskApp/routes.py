@@ -9,7 +9,7 @@ import plotly.express as px
 @app.route('/')
 @app.route('/home')
 def homePage():
-    return render_template("home.html", name = "Daniel")
+    return render_template("home2.html", name = "Daniel")
 
 
 @app.route('/dataVisualization')

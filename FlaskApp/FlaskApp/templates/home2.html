@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home2.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Company</h1> 
+  <p>We specialize in blablabla</p> 
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-4">
+        <div class="card">
+          <h3>Table</h3>
+          <p>Some description</p>
+          <a href="{{ url_for('dataPage') }}" class="btn btn-primary">dataFrame Table</a>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card">
+          <h3>Plots</h3>
+          <p>Some description</p>
+          <a href="{{ url_for('plot') }}" class="btn btn-primary">Scatter plot</a>
+        </div>
+      </div>
+      
+      <div class="col-sm-4">
+        <div class="card">
+          <h3>Tree graphs</h3>
+          <p>Some description</p>
+          <a href="{{ url_for('dataVisualization') }}" class="btn btn-primary">Tree graph</a>
+        </div>
+      </div>    
+    </div> 
+  </div>
+
+<nav class="navbar fixed-bottom navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">FlaskApp</a>
+    
+</nav>
+
+
+</body>
+<footer>
+   
+
+</footer>
+</html>
