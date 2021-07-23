@@ -1,0 +1,20 @@
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: rgb(252, 252, 252);
+    color: black;
+    height: 20em;
+    width: 30em;
+    margin: auto;
+    vertical-align: middle;
+    margin-top:  3em;
+    padding-top: 3em;
+  }

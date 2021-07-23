@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  FlaskApp
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
+
+<div class="container-fluid text-center">
+  <div class="row">
+      <div class="col-sm-12">
+      <div class="card">
+        <h3>Request Subnet</h3>
+        <p style="padding-top: 15px;">Given an IP-Address, the API returns 
+          <br> the corresponding subnet.</p>
+          <!--  -->
+          <div class="container"> 
+            <form action = "http://localhost:5000/tasks/subnetRequest" method = "post">
+                <p><input type = "text" name = "ip"  placeholder="IP-Address"/></p>
+                <p><input type = "submit" value = "submit" /></p>
+             </form>     
+             <!--  -->
+         </div>
+
+         <h4>{{subnet}}</h4>  
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

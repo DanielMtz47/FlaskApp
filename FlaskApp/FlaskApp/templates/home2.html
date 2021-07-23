@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
+  <title>FlaskApp</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -13,16 +12,9 @@
 <body>
 
 <div class="jumbotron text-center">
-  <h1>Company</h1> 
-  <p>We specialize in blablabla</p> 
-  <form class="form-inline">
-    <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Subscribe</button>
-      </div>
-    </div>
-  </form>
+  <h1>FlaskApp</h1> 
+  <p>Data Visualization</p> 
+  
 </div>
 
 <div class="container-fluid text-center">
@@ -37,9 +29,10 @@
 
       <div class="col-sm-4">
         <div class="card">
-          <h3>Plots</h3>
-          <p>Some description</p>
-          <a href="{{ url_for('plot') }}" class="btn btn-primary">Scatter plot</a>
+          <h2>API tasks</h2>
+          <p style="padding-top: 10px;"> Flask API integration into 
+            <br> webpage to answer http requests.</p>
+          <a href="{{ url_for('tasks') }}" class="btn btn-primary">API</a>
         </div>
       </div>
       
